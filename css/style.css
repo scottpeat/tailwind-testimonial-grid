@@ -588,8 +588,28 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
 .relative {
   position: relative;
+}
+
+.top-3 {
+  top: 0.75rem;
+}
+
+.right-1 {
+  right: 0.25rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .mx-auto {
@@ -597,12 +617,52 @@ video {
   margin-right: auto;
 }
 
+.flex {
+  display: flex;
+}
+
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
 .max-w-7xl {
   max-width: 80rem;
 }
 
+.scale-125 {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-gray-200 {
@@ -628,7 +688,42 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.ring {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-2 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-purple-300 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(216 180 254 / var(--tw-ring-opacity, 1));
+}
+
 @media (min-width: 768px) {
+  .md\:top-7 {
+    top: 1.75rem;
+  }
+
+  .md\:right-2 {
+    right: 0.5rem;
+  }
+
+  .md\:right-24 {
+    right: 6rem;
+  }
+
+  .md\:scale-150 {
+    --tw-scale-x: 1.5;
+    --tw-scale-y: 1.5;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:p-10 {
     padding: 2.5rem;
   }
